@@ -1,0 +1,24 @@
+[
+      {
+        "icon": "fa fa-edit",
+        "title": "Pendaftaran",
+        "text": "Lakukan Pendaftaran pada pelatihan yang ingin anda ikuti"
+      },
+      {
+        "icon": "fa fa-group",
+        "title": "Seleksi",
+        "text": "Ikuti tahap seleksi yang telah disediakan berdasarkan waktu yang ditentukan"
+      },
+      {
+        "icon": "fa fa-check-square-o",
+        "title": "Verifikasi",
+        "text": "Data dan aplikasi pendaftaran anda akan di verifikasi tim penyelenggara"
+      },
+      {
+        "icon": "fa fa-trophy",
+        "title": "Ikuti Pelatihan",
+        "text": "Setelah dinyatakan sebagai peserta, anda dapat mengikti pelatihan sesuai jadwal"
+      }
+    ]
+
+  

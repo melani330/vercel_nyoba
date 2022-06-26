@@ -1,0 +1,45 @@
+.btn-navbar {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5ca9fb;
+    background-image: linear-gradient(to right, #338be9  0%, #79eaf7 100%);
+    padding: 14px 34px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.5s linear;
+    border: 0;
+  }
+  .btn-navbar:hover,
+  .btn-navbar:focus,
+  .btn-navbar.focus,
+  .btn-navbar:active,
+  .btn-navbar.active {
+    color: #fff;
+    background-image: none;
+    background-color: #3196dd;
+  }
+  .btn:active,
+  .btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:focus,
+  .btn:focus,
+  .btn:active:focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn.active.focus {
+    outline: none;
+    outline-offset: none;
+  }
+  

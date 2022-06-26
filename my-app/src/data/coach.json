@@ -1,0 +1,22 @@
+[
+{
+    "img": "https://i.pravatar.cc/300?img=1",
+    "name": "Jane Doe",
+    "job": "Business Manager"
+  },
+  {
+    "img": "https://i.pravatar.cc/300?img=5",
+    "name": "Karen Doe",
+    "job": "Product Designer"
+  },
+  {
+    "img": "https://i.pravatar.cc/300?img=13",
+    "name": "John Doe",
+    "job": "Senior Designer"
+  },
+  {
+    "img": "https://i.pravatar.cc/300?img=8",
+    "name": "Mike Doe",
+    "job": "Project Manager"
+  }
+]
