@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import {
   AppBar,
   Tabs,
-  // Tab,
+  Tab,
   Toolbar,
-  // Button,
+//   Button,
   useMediaQuery,
   useTheme,
   Typography,
@@ -14,9 +14,9 @@ import Drawercomp from "./Drawercomp";
 import "../css/navbar.css";
 import { Link } from 'react-router-dom';
 
-// const Pages = ["About", "Products", "Contact Us"];
+const Pages = ["Tentang", "Pendaftaran", "Coach", "Kontak"];
 
-function Navbar() {
+function NavbarAfter() {
   const [value, setValue] = useState();
   const theme = useTheme();
 
@@ -45,28 +45,11 @@ function Navbar() {
                 onChange={(e, value) => setValue(value)}
                 indicatorColor="secondary"
               >
-                {/* {Pages.map((page, index) => (
+                {Pages.map((page, index) => (
                   <Tab key={index} label={page} />
-                ))} */}
+                ))}
               </Tabs>
-              <Link to="/signIn" className="btn btn-navbar">
-                Sign In
-              </Link>
-              <Link to="/signUp" className="btn btn-navbar">
-                Sign Up
-              </Link>
-              {/* <Button
-                sx={{ marginLeft: "auto", color: "black" }}
-                variant="contained"
-              >
-                Login
-              </Button>
-              <Button
-                sx={{ marginLeft: "10px", color: "black" }}
-                variant="contained"
-              >
-                Sign Up
-              </Button> */}
+                <Link to="/" className='btn btn-navbar'>Sign Out</Link>
             </>
           )}
         </Toolbar>
@@ -75,4 +58,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarAfter;
