@@ -21,8 +21,9 @@ const theme = createTheme(
     }
 );
 
-export default function Tentang() {
+export default function Tentang(props) {
   return (
+  <div id="tentang">
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <main>
@@ -31,7 +32,7 @@ export default function Tentang() {
           sx={{
             bgcolor: 'background.paper',
             pt: 20,
-            pb: 10,
+            pb: 15,
             pl: 10,
             pr: 10,
             // display: 'flex', flexDirection: 'row',
@@ -74,8 +75,11 @@ export default function Tentang() {
               justifyContent="left"
               padding-right="20px"
             >
-              <button className='btn btn-custom'>
-                  Daftar Sekarang
+              {/* <Link to="/signIn" className='btn btn-custom'>
+                  Already have an account? Sign in
+                </Link> */}
+              <button className='btn btn-custom' href="#pendaftaran">
+                  Pelajari Lebih Lanjut
                 </button>
               {/* <Button variant="contained" background-color="primary">Daftar Sekarang</Button> */}
             </Stack>
@@ -86,5 +90,6 @@ export default function Tentang() {
       </main>
    
     </ThemeProvider>
+    </div>
   );
 }

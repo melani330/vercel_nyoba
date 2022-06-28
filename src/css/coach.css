@@ -1,18 +1,19 @@
 /* Team Section */
-#team {
+#coach {
     padding: 50px 0;
+    background: #dff2fb;
   }
-  #team h4 {
+  #coach h4 {
     margin: 5px 0;
   }
-  #team .team-img {
+  #coach .team-img {
     width: 240px;
   }
-  #team .thumbnail {
+  #coach .thumbnail {
     background: transparent;
     border: 0;
   }
-  #team .thumbnail .caption {
+  #coach .thumbnail .caption {
     padding: 10px 0 0;
     color: rgb(95, 94, 94);
   }

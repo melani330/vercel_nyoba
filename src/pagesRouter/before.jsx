@@ -1,7 +1,7 @@
 import * as React from "react";
 // import {Component} from "react";
 import Footer from "../components/footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import Tentang from "../components/tentang";
 import Pendaftaran from "../components/pendaftaran";
 import DataPendaftaran from "../data/pendaftaran.json";

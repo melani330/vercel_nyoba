@@ -21,6 +21,7 @@ const theme = createTheme({
 
 export default function Footer() {
   return (
+    <div id="footer">
     <ThemeProvider theme={theme}>
       <footer>
         <Box
@@ -88,7 +89,7 @@ export default function Footer() {
         </Box>
       </footer>
     </ThemeProvider>
+    </div>
   );
 }
 
-//

@@ -9,9 +9,9 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const Pages = ["Tentang", "Tahap Pendaftaran", "Couch", "Kontak", "Sign Out"];
+const Pages = ["Sign In", "Sign Up"];
 
-function Drawercomp() {
+function Drawercompbefore() {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <React.Fragment>
@@ -40,4 +40,4 @@ function Drawercomp() {
   );
 }
 
-export default Drawercomp;
+export default Drawercompbefore;

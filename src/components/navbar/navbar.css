@@ -42,4 +42,6 @@
     outline: none;
     outline-offset: none;
   }
-  
+  .sign{
+    color:rgb(55, 174, 195);
+  }

@@ -2,24 +2,19 @@ import React, { useState } from "react";
 import {
   AppBar,
   Tabs,
-  Tab,
   Toolbar,
-//   Button,
   useMediaQuery,
   useTheme,
   Typography,
 } from "@mui/material";
-import logo from "../images/logo.png";
-import Drawercomp from "./Drawercomp";
-import "../css/navbar.css";
-import { Link } from 'react-router-dom';
+import logo from "./logo.png";
+import Drawercompbefore from "../Drawercompbefore";
+import "./navbar.css";
+import { Link } from "react-router-dom";
 
-const Pages = ["Tentang", "Pendaftaran", "Coach", "Kontak"];
-
-function NavbarAfter() {
+function Navbar() {
   const [value, setValue] = useState();
   const theme = useTheme();
-
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
@@ -34,7 +29,7 @@ function NavbarAfter() {
               >
                 UsahaKuy.ID
               </Typography>
-              <Drawercomp />
+              <Drawercompbefore />
             </>
           ) : (
             <>
@@ -45,11 +40,16 @@ function NavbarAfter() {
                 onChange={(e, value) => setValue(value)}
                 indicatorColor="secondary"
               >
-                {Pages.map((page, index) => (
+                {/* {Pages.map((page, index) => (
                   <Tab key={index} label={page} />
-                ))}
+                ))} */}
               </Tabs>
-                <Link to="/" className='btn btn-navbar'>Sign Out</Link>
+              <Link to="/signIn" className="btn btn-navbar">
+                Sign In
+              </Link>
+              <Link to="/signUp" className="btn btn-navbar">
+                Sign Up
+              </Link>
             </>
           )}
         </Toolbar>
@@ -58,4 +58,4 @@ function NavbarAfter() {
   );
 }
 
-export default NavbarAfter;
+export default Navbar;

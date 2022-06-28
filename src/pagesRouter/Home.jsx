@@ -1,6 +1,8 @@
 import * as React from "react";
 import BeforePage from "./before";
 import AfterPage from "./after";
+// import PelatihanPage from "../pages/PelatihanAfter";
+import PelatihanPage from "../pages/Pelatihan";
 import SignInPage from "../components/signIn.tsx";
 import SignUpPage from "../components/signUp.tsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,6 +19,9 @@ function Home() {
         </Route>
         <Route exact path="/signUp">
           <SignUpPage />
+        </Route>
+        <Route exact path="/pelatihan">
+          <PelatihanPage />
         </Route>
         <Route exact path="/">
           <BeforePage />

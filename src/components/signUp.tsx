@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -11,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import NavbarSignUp from './navbar/navbarSignUp';
 
 function Copyright(props: any) {
   return (
@@ -35,12 +35,14 @@ export default function SignUp() {
   };
 
   return (
+
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
+      <NavbarSignUp/>
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 10,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -97,25 +99,26 @@ export default function SignUp() {
               <Grid item xs={12}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="Saya ingin menerima penawaran promosi dan update pelatihan melalui email"
                 />
               </Grid>
             </Grid>
             <Link to="/after">
-            <Button
-              type="submit"
-              fullWidth
-              className="btn btn-navbar"
-              variant="contained"
-              sx={{ mt: 4, mb: 3 }}
+            <Link to="/after">
+            <Typography sx={{mb: 5, mt: 5}}
+            className="btn btn-custom" 
+            align="center"
             >
               Sign Up
-            </Button>
+            </Typography>
+            </Link>
             </Link> 
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link to="/signIn">
-                  Already have an account? Sign in
+              <Link to="/signIn">
+                <Typography className="sign">
+                  Sudah Memiliki Akun? Masuk
+                  </Typography>
                 </Link>
               </Grid>
             </Grid>

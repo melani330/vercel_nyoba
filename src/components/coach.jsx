@@ -2,9 +2,9 @@ import "../css/coach.css";
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 
- const Coach = (props) => {
+const Coach = (props) => {
     return (
-      <div id='team' className='text-center'>
+      <div id='coach' className='text-center'>
         <div className='container'>
           <div className='col-md-10 col-md-offset-1 section-title'>
             <Typography

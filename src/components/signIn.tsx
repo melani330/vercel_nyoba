@@ -1,6 +1,4 @@
 import * as React from 'react';
-// import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -8,7 +6,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import logo from "../images/logo.png";
-// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import NavbarSignIn from './navbar/navbarSignin';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -40,6 +38,7 @@ function SignIn() {
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
+        <NavbarSignIn/>
         <Box
           sx={{
             marginTop: 8,
@@ -77,16 +76,13 @@ function SignIn() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-             <Link to="/after">
-            <Button
-              type="submit"
-              fullWidth
-              className="btn btn-navbar"
-              variant="contained"
-              sx={{ mt: 4, mb: 3 }}
+            <Link to="/after">
+            <Typography sx={{mb: 5, mt: 5}}
+            className="btn btn-custom" 
+            align="center"
             >
               Sign In
-            </Button>
+            </Typography>
             </Link>
             <Grid container>
               <Grid item xs>
@@ -96,7 +92,9 @@ function SignIn() {
               </Grid>
               <Grid item>
                 <Link to="/signUp">
-                  {"Don't have an account? Sign Up"}
+                <Typography className="sign">
+                  Belum Memiliki Akun? Daftar
+                  </Typography>
                 </Link>
               </Grid>
             </Grid>
