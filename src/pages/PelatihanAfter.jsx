@@ -1,7 +1,7 @@
 import React from "react";
 import Cardpelatihan from "../components/CardpelatihanAfter";
 import { Box, Typography } from "@mui/material";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Pelatihan() {
   return (
@@ -19,11 +19,8 @@ function Pelatihan() {
             <h2>List Pelatihan</h2>
           </Typography>
           <Link to="/pelatihan">
-                <Typography className="sign">
-                  {"Lihat Semua >>>"}
-                  </Typography>
-                </Link>
-          {/* <Button color="secondary">{"Lihat Semua >>>"}</Button> */}
+            <Typography className="sign">{"Lihat Semua >>>"}</Typography>
+          </Link>
         </Box>
         <Cardpelatihan />
       </Box>

@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
+import { CardActionArea, CardActions, Grid } from "@mui/material";
 import { COURSE_DATA } from "../data/datapelatihan";
 
 function Pelatihancard() {
@@ -46,18 +46,19 @@ function Pelatihancard() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions sx={{ paddingLeft: "1rem" }}>
-                  <Button
-                    variant="contained"
-                    size="small"
+                <Typography
                     sx={{
-                      paddingLeft: "35%",
-                      paddingRight: "35%",
-                      backgroundColor: "#4fc3f7",
-                      color: "text.primary",
+                      mb: 5,
+                      mt: 5,
+                      paddingLeft: "30%",
+                      paddingRight: "30%",
                     }}
+                    className="btn btn-custom"
+                    variant="contained"
+                    align="center"
                   >
                     Lihat Detail
-                  </Button>
+                  </Typography>
                 </CardActions>
               </Card>
             </Grid>

@@ -7,7 +7,7 @@ function Pelatihan() {
   return (
     <div>
       <Navbarpelatihan />
-      <Box sx={{ p: 3, marginLeft: "5%" }}>
+      <Box sx={{ p: 3, marginTop:10, marginLeft: "5%" }}>
         <Box
           component="span"
           m={1}
