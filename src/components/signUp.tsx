@@ -105,7 +105,7 @@ export default function SignUp() {
             </Grid>
             <Link to="/after">
             <Link to="/after">
-            <Typography sx={{mb: 5, mt: 5}}
+            <Typography sx={{mb: 3, mt: 3}}
             className="btn btn-custom" 
             align="center"
             >

@@ -41,7 +41,7 @@ function SignIn() {
         <NavbarSignIn/>
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 10,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -77,7 +77,7 @@ function SignIn() {
               label="Remember me"
             />
             <Link to="/after">
-            <Typography sx={{mb: 5, mt: 5}}
+            <Typography sx={{mb: 3, mt: 3}}
             className="btn btn-custom" 
             align="center"
             >
