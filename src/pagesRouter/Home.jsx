@@ -3,8 +3,11 @@ import BeforePage from "./before";
 import AfterPage from "./after";
 // import PelatihanPage from "../pages/PelatihanAfter";
 import PelatihanPage from "../pages/Pelatihan";
-import SignInPage from "../components/signIn.tsx";
-import SignUpPage from "../components/signUp.tsx";
+// import SignInPage from "../components/signIn.tsx";
+// import SignUpPage from "../components/signUp.tsx";
+import RegistrationPage from "../components/Registration";
+import LoginPage from "../components/Login";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Home() {
@@ -14,11 +17,17 @@ function Home() {
         <Route exact path="/after">
           <AfterPage />
         </Route>
-        <Route exact path="/signIn">
+        {/* <Route exact path="/signIn">
           <SignInPage />
         </Route>
         <Route exact path="/signUp">
           <SignUpPage />
+        </Route> */}
+        <Route exact path="/login">
+          <LoginPage />
+        </Route>
+        <Route exact path="/regis">
+          <RegistrationPage />
         </Route>
         <Route exact path="/pelatihan">
           <PelatihanPage />

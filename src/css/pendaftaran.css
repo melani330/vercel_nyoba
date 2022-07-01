@@ -24,7 +24,7 @@
 }
   /* Features Section */
 #pendaftaran {
-  background: #dff2fb;
+  background: linear-gradient(to right,   #b2ddf1 0%,   #edfafd 100%); 
 }
 #pendaftaran i.fa {
   font-size: 38px;

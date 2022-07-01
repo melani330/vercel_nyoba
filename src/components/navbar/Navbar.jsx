@@ -44,10 +44,10 @@ function Navbar() {
                   <Tab key={index} label={page} />
                 ))} */}
               </Tabs>
-              <Link to="/signIn" className="btn btn-navbar">
+              <Link to="/login" className="btn btn-navbar">
                 Sign In
               </Link>
-              <Link to="/signUp" className="btn btn-navbar">
+              <Link to="/regis" className="btn btn-navbar">
                 Sign Up
               </Link>
             </>

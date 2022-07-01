@@ -15,7 +15,7 @@ export default function Navbarpelatihan() {
           <img src={logo} alt="Logo" width={75} height={75} />
           
           <Button color="inherit" sx={{ marginLeft: "auto", color: "black" }}>
-          <Link to="/after">
+          <Link className="white" to="/after">
             Home
             </Link>
           </Button>

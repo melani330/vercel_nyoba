@@ -5,7 +5,7 @@ import Link from "@mui/material/Link";
 import * as React from "react";
 import logo from "../images/logo-tp.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { purple } from "@mui/material/colors";
+
 
 const theme = createTheme({
   palette: {

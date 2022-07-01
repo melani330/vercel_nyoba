@@ -1,13 +1,13 @@
 /* Team Section */
 #coach {
     padding: 50px 0;
-    background: #dff2fb;
+    background: linear-gradient(to right,  #e6f2f5 0%,  #aaddf5 100%); 
   }
   #coach h4 {
     margin: 5px 0;
   }
   #coach .team-img {
-    width: 240px;
+    width: 200px;
   }
   #coach .thumbnail {
     background: transparent;

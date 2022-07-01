@@ -33,7 +33,7 @@ export default function SignUp() {
       password: data.get('password'),
     });
   };
-
+  
   return (
 
     <ThemeProvider theme={theme}>
@@ -52,7 +52,7 @@ export default function SignUp() {
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -63,7 +63,7 @@ export default function SignUp() {
                   id="firstName"
                   label="First Name"
                   autoFocus
-                />
+                  />
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -73,7 +73,7 @@ export default function SignUp() {
                   label="Last Name"
                   name="lastName"
                   autoComplete="family-name"
-                />
+                   />
               </Grid>
               <Grid item xs={12}>
                 <TextField
@@ -83,7 +83,7 @@ export default function SignUp() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
-                />
+                  />
               </Grid>
               <Grid item xs={12}>
                 <TextField
@@ -94,7 +94,16 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
-                />
+                  />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  name="number"
+                  label="No Telepon"
+                  type="number"
+                   />
               </Grid>
               <Grid item xs={12}>
                 <FormControlLabel
@@ -103,8 +112,8 @@ export default function SignUp() {
                 />
               </Grid>
             </Grid>
-            <Link to="/after">
-            <Link to="/after">
+            <Link to="/signIn">
+            {/* <Link to="/after"> */}
             <Typography sx={{mb: 3, mt: 3}}
             className="btn btn-custom" 
             align="center"
@@ -112,7 +121,7 @@ export default function SignUp() {
               Sign Up
             </Typography>
             </Link>
-            </Link> 
+            {/* </Link>  */}
             <Grid container justifyContent="flex-end">
               <Grid item>
               <Link to="/signIn">
@@ -122,6 +131,7 @@ export default function SignUp() {
                 </Link>
               </Grid>
             </Grid>
+            
           </Box>
         </Box>
         <Copyright sx={{ mt: 5 }} />
