@@ -30,11 +30,10 @@ export default function Tentang(props) {
         <Box
           sx={{
             bgcolor: 'background.paper',
-            pt: 20,
-            pb: 15,
+            pt: 10,
+            pb: 10,
             pl: 10,
             pr: 10,
-            // display: 'flex', flexDirection: 'row',
             width: '100%' 
           }}
         >
@@ -74,13 +73,9 @@ export default function Tentang(props) {
               justifyContent="left"
               padding-right="20px"
             >
-              {/* <Link to="/signIn" className='btn btn-custom'>
-                  Already have an account? Sign in
-                </Link> */}
               <button className='btn btn-custom' href="#pendaftaran">
                   Pelajari Lebih Lanjut
                 </button>
-              {/* <Button variant="contained" background-color="primary">Daftar Sekarang</Button> */}
             </Stack>
           </Grid>
           </Grid>

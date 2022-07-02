@@ -46,7 +46,7 @@ function Pelatihancard() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions sx={{ paddingLeft: "1rem" }}>
-                {/* <Typography
+                <Typography
                     sx={{
                       mb: 5,
                       mt: 5,
@@ -58,7 +58,7 @@ function Pelatihancard() {
                     align="center"
                   >
                     Lihat Detail
-                  </Typography> */}
+                  </Typography>
                 </CardActions>
               </Card>
             </Grid>

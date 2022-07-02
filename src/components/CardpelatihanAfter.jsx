@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions, Grid } from "@mui/material";
 import { COURSE_DATA } from "../data/pelatihan";
-import PelatihanModal from "./Modal/pelatihanModal.tsx";
 
 function Pelatihancard() {
   return (
@@ -47,9 +46,7 @@ function Pelatihancard() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions sx={{ paddingLeft: "1rem" }}>
-
-                  <PelatihanModal/>
-                {/* <Typography
+                <Typography
                     sx={{
                       mb: 5,
                       mt: 5,
@@ -61,7 +58,7 @@ function Pelatihancard() {
                     align="center"
                   >
                     Lihat Detail
-                  </Typography> */}
+                  </Typography>
                 </CardActions>
               </Card>
             </Grid>

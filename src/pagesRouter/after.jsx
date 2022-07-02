@@ -7,7 +7,8 @@ import DataPendaftaran from "../data/pendaftaran.json";
 import DataCoach from "../data/coach.json";
 import Coach from "../components/coach";
 import SmoothScroll from "smooth-scroll";
-import Pelatihan from "../pages/PelatihanAfter";
+import Pelatihan from "../Pages/PelatihanAfter";
+import Slider from "../components/Slider/Slider";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -18,6 +19,7 @@ function After() {
   return (
     <div>
       <NavbarAfter />
+      <Slider/>
       <Tentang/>
       <Pendaftaran DataPendaftaran={DataPendaftaran}/>
       <Pelatihan/> 

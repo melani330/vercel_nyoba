@@ -7,11 +7,13 @@ import Pendaftaran from "../components/pendaftaran";
 import DataPendaftaran from "../data/pendaftaran.json";
 import DataCoach from "../data/coach.json";
 import Coach from "../components/coach";
+import Slider from "../components/Slider/Slider";
 
 function Before () {
     return (
       <div>
         <Navbar />
+        <Slider/>
         <Tentang />
         <Pendaftaran DataPendaftaran={DataPendaftaran} />
         <Coach DataCoach={DataCoach} />

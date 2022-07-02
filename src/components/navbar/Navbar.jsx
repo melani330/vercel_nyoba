@@ -40,14 +40,12 @@ function Navbar() {
                 onChange={(e, value) => setValue(value)}
                 indicatorColor="secondary"
               >
-                {/* {Pages.map((page, index) => (
-                  <Tab key={index} label={page} />
-                ))} */}
+                
               </Tabs>
-              <Link to="/login" className="btn btn-navbar">
+              <Link to="/signIn" className="btn btn-navbar">
                 Sign In
               </Link>
-              <Link to="/regis" className="btn btn-navbar">
+              <Link to="/signUp" className="btn btn-navbar">
                 Sign Up
               </Link>
             </>

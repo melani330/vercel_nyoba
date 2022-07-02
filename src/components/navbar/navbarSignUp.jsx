@@ -26,7 +26,7 @@ export default function NavbarSignUp() {
           </Button>
           <Typography sx={{ color: "black" }}> | </Typography>
           <Button color="inherit" sx={{ color: "black" }}>
-            <Link to="/login" className="white">Sign In</Link>
+            <Link className="white" to="/signIn">Sign In</Link>
           </Button>
         </Toolbar>
       </AppBar>

@@ -4,12 +4,11 @@ import {
   IconButton,
   List,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
+  Tab,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-
-const Pages = ["Tentang", "Tahap Pendaftaran", "Couch", "Kontak", "Sign Out"];
+import { Link } from "react-router-dom";
 
 function Drawercomp() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -21,13 +20,44 @@ function Drawercomp() {
         onClose={() => setOpenDrawer(false)}
       >
         <List>
-          {Pages.map((page, index) => (
-            <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
-              <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
-              </ListItemIcon>
-            </ListItemButton>
-          ))}
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <Tab label="Tentang" href="#tentang" className="page-scroll" />
+          </ListItemButton>
+        </List>
+        <List>
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <Tab
+              label="Pendaftaran"
+              href="#pendaftaran"
+              className="page-scroll"
+            />
+          </ListItemButton>
+        </List>
+        <List>
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <Tab
+              label="Pelatihan"
+              href="#pelatihanafter"
+              className="page-scroll"
+            />
+          </ListItemButton>
+        </List>
+        <List>
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <Tab label="Coach" href="#coach" className="page-scroll" />
+          </ListItemButton>
+        </List>
+        <List>
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <Tab label="Kontak" href="#footer" className="page-scroll" />
+          </ListItemButton>
+        </List>
+        <List>
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link to="/">Sign Out</Link>
+            </ListItemText>
+          </ListItemButton>
         </List>
       </Drawer>
       <IconButton
