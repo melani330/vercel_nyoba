@@ -1,7 +1,7 @@
 import * as React from "react";
 import BeforePage from "./before";
 import AfterPage from "./after";
-import PelatihanPage from "../Pages/Pelatihan";
+import PelatihanPage from "../pages/Pelatihan";
 import SignInPage from "../userStorage/signIn";
 import SignUpPage from "../userStorage/signUp";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
