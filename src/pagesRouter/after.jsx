@@ -7,7 +7,7 @@ import DataPendaftaran from "../data/pendaftaran.json";
 import DataCoach from "../data/coach.json";
 import Coach from "../components/coach";
 import SmoothScroll from "smooth-scroll";
-import Pelatihan from "../Pages/PelatihanAfter";
+import Pelatihan from "../pages/PelatihanAfter";
 import Slider from "../components/Slider/Slider";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
