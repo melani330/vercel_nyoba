@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions, Grid } from "@mui/material";
 import { COURSE_DATA } from "../data/datapelatihan";
+import { Link } from 'react-router-dom';
 
 function Pelatihancard() {
   return (
@@ -56,8 +57,8 @@ function Pelatihancard() {
                     className="btn btn-custom"
                     variant="contained"
                     align="center"
-                  >
-                    Lihat Detail
+                  ><Link to="/detailPelatihan" className="white">
+                    Lihat Detail</Link>
                   </Typography>
                 </CardActions>
               </Card>

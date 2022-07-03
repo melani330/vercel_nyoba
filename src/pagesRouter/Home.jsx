@@ -4,6 +4,8 @@ import AfterPage from "./after";
 import PelatihanPage from "../pages/Pelatihan";
 import SignInPage from "../userStorage/signIn";
 import SignUpPage from "../userStorage/signUp";
+import BlogPage from "../pages/detailPelatihan/Detail";
+import TemaPage from "../pages/detailPelatihan/DetailTema";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Home() {
@@ -12,6 +14,12 @@ function Home() {
       <Switch>
         <Route exact path="/after">
           <AfterPage />
+        </Route>
+        <Route exact path="/detailPelatihan">
+          <BlogPage />
+        </Route>
+        <Route exact path="/detailTema">
+          <TemaPage />
         </Route>
         <Route exact path="/signIn">
           <SignInPage />
